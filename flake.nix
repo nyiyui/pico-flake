@@ -80,6 +80,8 @@
 
       in
       {
+        templates.default.path = ./.;
+        templates.default.description = "Raspberry Pi Pico project template.";
         devShells.default = pkgs.mkShell {
           packages =
             (with pkgs; [

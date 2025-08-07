@@ -2,6 +2,14 @@
 
 This repo contains a Nix flake template for making a Raspberry Pi Pico firmware image.
 
+## Setup with `nix flake init`
+
+```
+nix flake init --template github:nyiyui/pico-flake
+```
+
+## Setup for Development
+
 Run `./scripts/dev-env-setup.sh` to generate your [JSON Compilation Database](https://clang.llvm.org/docs/JSONCompilationDatabase.html) aka `compile_commands.json` file. This file helps [clangd](https://clangd.llvm.org/) (and other tools) find the correct include and library paths.
 
 ## Building and Flashing
